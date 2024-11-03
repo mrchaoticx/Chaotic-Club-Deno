@@ -9,7 +9,7 @@ function app(){
 Deno.serve({ port: 8000 }, async (_req) => {
   return new Response(
       [
-        
+        app()
       ].join(''),
       {
           status: 200,
